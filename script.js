@@ -10,6 +10,8 @@ onload = function () {
     const cities = ['Delhi', 'Mumbai', 'Gujarat', 'Goa', 'Kanpur', 'Jammu', 'Hyderabad', 'Bangalore', 'Gangtok', 'Meghalaya'];
 
     // initialise graph options
+    /* The settings for tweaking edges/nodes 
+    can be found here https://visjs.github.io/vis-network/docs/network/nodes.html# */
     const options = {
         edges: {
             labelHighlightBold: true,
@@ -18,16 +20,18 @@ onload = function () {
             }
         },
         nodes: {
-            font: '12px arial red',
+            font: '11px verdana red',
             scaling: {
                 label: true
             },
+            // Custom icon instead of default nodes are taken from Font Awesome
+            // Link : https://fontawesome.com/icons/city?s=solid
             shape: 'icon',
             icon: {
                 face: 'FontAwesome',
-                code: '\uf015',
-                size: 40,
-                color: '#991133',
+                code: '\uf64f',
+                size: 36,
+                color: '#0C49F0',
             }
         }
     };
